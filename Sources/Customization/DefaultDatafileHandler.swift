@@ -40,7 +40,7 @@ open class DefaultDatafileHandler: OPTDatafileHandler {
     // network reachability
     let reachability = NetworkReachability(maxContiguousFails: 1)
 
-    public required init() {}
+    public init() {}
     
     // MARK: - download datafile
     

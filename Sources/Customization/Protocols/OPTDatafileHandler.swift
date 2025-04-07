@@ -22,8 +22,6 @@ public typealias DatafileDownloadCompletionHandler = (OptimizelyResult<Data?>) -
 /// The datafile handler is used by the optimizely manager to manage the Optimizely datafile.
 ///
 public protocol OPTDatafileHandler {
-    init()
-    
     var endPointStringFormat: String { get set }
     
     /**

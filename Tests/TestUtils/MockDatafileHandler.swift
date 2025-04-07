@@ -31,9 +31,7 @@ class MockDatafileHandler: DefaultDatafileHandler {
     init(settingsMap: [String: (Int, Bool)]) {
         self.settingsMap = settingsMap
     }
-    
-    public required init() {}
-    
+
     override func getSession(resourceTimeoutInterval: Double?) -> URLSession {
         if let settingsMap = settingsMap {
             return MockUrlSession(handler: self, settingsMap: settingsMap)
